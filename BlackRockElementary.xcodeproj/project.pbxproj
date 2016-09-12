@@ -19,6 +19,11 @@
 		3F2748C01D4F16EA003B6B85 /* bre-banner3.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F2748BF1D4F16EA003B6B85 /* bre-banner3.png */; };
 		3F2748C21D4F1A0A003B6B85 /* bresheader.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F2748C11D4F1A0A003B6B85 /* bresheader.png */; };
 		3F2748C41D4F1B5D003B6B85 /* bresheader2.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F2748C31D4F1B5D003B6B85 /* bresheader2.png */; };
+		3FFFF39C1D872FB100355280 /* BREWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFF39B1D872FB100355280 /* BREWebViewController.m */; };
+		3FFFF39F1D874C4100355280 /* BRESchoolInfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFF39E1D874C4100355280 /* BRESchoolInfoViewController.m */; };
+		3FFFF3A21D874E1B00355280 /* home-icon-white.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFF3A01D874E1B00355280 /* home-icon-white.png */; };
+		3FFFF3A31D874E1B00355280 /* home-icon-white@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3FFFF3A11D874E1B00355280 /* home-icon-white@2x.png */; };
+		3FFFF3A61D8769A800355280 /* BREStaffViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3FFFF3A51D8769A800355280 /* BREStaffViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +43,14 @@
 		3F2748BF1D4F16EA003B6B85 /* bre-banner3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bre-banner3.png"; sourceTree = "<group>"; };
 		3F2748C11D4F1A0A003B6B85 /* bresheader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bresheader.png; sourceTree = "<group>"; };
 		3F2748C31D4F1B5D003B6B85 /* bresheader2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bresheader2.png; sourceTree = "<group>"; };
+		3FFFF39A1D872FB100355280 /* BREWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREWebViewController.h; sourceTree = "<group>"; };
+		3FFFF39B1D872FB100355280 /* BREWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREWebViewController.m; sourceTree = "<group>"; };
+		3FFFF39D1D874C4100355280 /* BRESchoolInfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BRESchoolInfoViewController.h; sourceTree = "<group>"; };
+		3FFFF39E1D874C4100355280 /* BRESchoolInfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BRESchoolInfoViewController.m; sourceTree = "<group>"; };
+		3FFFF3A01D874E1B00355280 /* home-icon-white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon-white.png"; sourceTree = "<group>"; };
+		3FFFF3A11D874E1B00355280 /* home-icon-white@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-icon-white@2x.png"; sourceTree = "<group>"; };
+		3FFFF3A41D8769A800355280 /* BREStaffViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BREStaffViewController.h; sourceTree = "<group>"; };
+		3FFFF3A51D8769A800355280 /* BREStaffViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BREStaffViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +87,12 @@
 				3F2748A61D4EF453003B6B85 /* AppDelegate.m */,
 				3F2748A81D4EF453003B6B85 /* ViewController.h */,
 				3F2748A91D4EF453003B6B85 /* ViewController.m */,
+				3FFFF39A1D872FB100355280 /* BREWebViewController.h */,
+				3FFFF39B1D872FB100355280 /* BREWebViewController.m */,
+				3FFFF39D1D874C4100355280 /* BRESchoolInfoViewController.h */,
+				3FFFF39E1D874C4100355280 /* BRESchoolInfoViewController.m */,
+				3FFFF3A41D8769A800355280 /* BREStaffViewController.h */,
+				3FFFF3A51D8769A800355280 /* BREStaffViewController.m */,
 				3F2748AB1D4EF453003B6B85 /* Main.storyboard */,
 				3F2748AE1D4EF453003B6B85 /* Assets.xcassets */,
 				3F2748B01D4EF453003B6B85 /* LaunchScreen.storyboard */,
@@ -86,6 +105,8 @@
 		3F2748A21D4EF453003B6B85 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3FFFF3A01D874E1B00355280 /* home-icon-white.png */,
+				3FFFF3A11D874E1B00355280 /* home-icon-white@2x.png */,
 				3F2748C31D4F1B5D003B6B85 /* bresheader2.png */,
 				3F2748C11D4F1A0A003B6B85 /* bresheader.png */,
 				3F2748BF1D4F16EA003B6B85 /* bre-banner3.png */,
@@ -157,9 +178,11 @@
 				3F2748BE1D4F1262003B6B85 /* bre-banner2.png in Resources */,
 				3F2748C41D4F1B5D003B6B85 /* bresheader2.png in Resources */,
 				3F2748B21D4EF453003B6B85 /* LaunchScreen.storyboard in Resources */,
+				3FFFF3A21D874E1B00355280 /* home-icon-white.png in Resources */,
 				3F2748AF1D4EF453003B6B85 /* Assets.xcassets in Resources */,
 				3F2748BC1D4F0E31003B6B85 /* bre-banner.png in Resources */,
 				3F2748BA1D4F01FC003B6B85 /* blackrock1920x1080.png in Resources */,
+				3FFFF3A31D874E1B00355280 /* home-icon-white@2x.png in Resources */,
 				3F2748C01D4F16EA003B6B85 /* bre-banner3.png in Resources */,
 				3F2748C21D4F1A0A003B6B85 /* bresheader.png in Resources */,
 				3F2748AD1D4EF453003B6B85 /* Main.storyboard in Resources */,
@@ -174,8 +197,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F2748AA1D4EF453003B6B85 /* ViewController.m in Sources */,
+				3FFFF3A61D8769A800355280 /* BREStaffViewController.m in Sources */,
+				3FFFF39F1D874C4100355280 /* BRESchoolInfoViewController.m in Sources */,
 				3F2748A71D4EF453003B6B85 /* AppDelegate.m in Sources */,
 				3F2748A41D4EF453003B6B85 /* main.m in Sources */,
+				3FFFF39C1D872FB100355280 /* BREWebViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,6 +350,7 @@
 				3F2748B81D4EF453003B6B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="t3p-0o-zO4">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -17,13 +18,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blackrock1920x1080.png" translatesAutoresizingMaskIntoConstraints="NO" id="OUH-8Y-tZe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="blackrock1920x1080.png" translatesAutoresizingMaskIntoConstraints="NO" id="OUH-8Y-tZe">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="0.0" y="0.0" width="400" height="800"/>
                                 </variation>
                             </imageView>
-                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-UN-33q">
+                            <button opaque="NO" alpha="0.84999999999999998" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qSs-UN-33q">
                                 <rect key="frame" x="150" y="180" width="300" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
@@ -38,8 +39,11 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="50" y="180" width="300" height="44"/>
                                 </variation>
+                                <connections>
+                                    <action selector="didSelectSchoolInformation:" destination="BYZ-38-t0r" eventType="touchUpInside" id="R4Z-Is-ZzR"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB1-QT-tiJ">
+                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hB1-QT-tiJ">
                                 <rect key="frame" x="150" y="244" width="300" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
@@ -50,8 +54,11 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="50" y="244" width="300" height="44"/>
                                 </variation>
+                                <connections>
+                                    <action selector="didSelectCalendar:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wuV-k6-r6y"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1v-tZ-TUo">
+                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R1v-tZ-TUo">
                                 <rect key="frame" x="150" y="308" width="300" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
@@ -62,8 +69,11 @@
                                 <variation key="heightClass=regular-widthClass=compact" fixedFrame="YES">
                                     <rect key="frame" x="50" y="244" width="300" height="44"/>
                                 </variation>
+                                <connections>
+                                    <action selector="didSelectStaff:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YaK-DK-htS"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npw-FB-tff">
+                            <button opaque="NO" alpha="0.85000002384185791" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Npw-FB-tff">
                                 <rect key="frame" x="150" y="372" width="300" height="44"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="24"/>
@@ -75,7 +85,7 @@
                                     <rect key="frame" x="50" y="244" width="300" height="44"/>
                                 </variation>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bresheader2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qhy-OR-Y6f">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="bresheader2.png" translatesAutoresizingMaskIntoConstraints="NO" id="Qhy-OR-Y6f">
                                 <rect key="frame" x="0.0" y="30" width="600" height="81"/>
                             </imageView>
                         </subviews>
@@ -104,6 +114,7 @@
                             <constraint firstItem="OUH-8Y-tZe" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="zzl-af-cXg"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="ozh-Mt-JiJ"/>
                     <connections>
                         <outletCollection property="buttons" destination="qSs-UN-33q" id="ssa-Y0-YHf"/>
                         <outletCollection property="buttons" destination="hB1-QT-tiJ" id="Vza-vf-fNx"/>
@@ -113,11 +124,635 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="396" y="336"/>
+            <point key="canvasLocation" x="1126" y="332"/>
+        </scene>
+        <!--School Info View Controller-->
+        <scene sceneID="7PC-gn-uwg">
+            <objects>
+                <viewController storyboardIdentifier="bre_school_info" id="3X7-i5-2rk" customClass="BRESchoolInfoViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="9vc-WP-6JJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="kR6-Pa-SiD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="e2V-PB-4Hf">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="1OJ-lE-5DH">
+                                <rect key="frame" x="420" y="210" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Lunch Menu">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="S4Q-qj-sQF"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="fXt-JJ-2vI">
+                                <rect key="frame" x="420" y="269" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Black Rock Site">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="PT8-Q1-RMd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Q8t-v7-2no">
+                                <rect key="frame" x="420" y="328" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Supply List">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="fes-GC-QuV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Lug-N1-2lM">
+                                <rect key="frame" x="420" y="387" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="SVVSD Calendar">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="b5p-1m-Ggz"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="OWp-3r-0LY">
+                                <rect key="frame" x="420" y="446" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="SVVSD Home">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="kpA-VK-eYn"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="111" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="36U-kF-kJN">
+                                <rect key="frame" x="420" y="505" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Online Resources">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="6Fm-Hf-eiT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSQ-ul-nyl">
+                                <rect key="frame" x="20" y="269" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Locate Us">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="MHU-Kk-Lyr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dRR-P7-mz3">
+                                <rect key="frame" x="20" y="328" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Online Payments">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="bHn-N3-Dgk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p8e-9w-y1n">
+                                <rect key="frame" x="20" y="387" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Infinite Campus">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="Dzj-4G-1l5"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2P-Ag-38h">
+                                <rect key="frame" x="20" y="446" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Report Absence">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="K6f-cp-oQY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9XN-pK-y7V">
+                                <rect key="frame" x="20" y="505" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Send Picture">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="XvF-w3-Ocf"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="School Information" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZGy-VD-wjB">
+                                <rect key="frame" x="147" y="130" width="307" height="45"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tcf-rM-cBd">
+                                <rect key="frame" x="256" y="30" width="88" height="82"/>
+                                <state key="normal" image="home-icon-white.png"/>
+                                <connections>
+                                    <action selector="didSelectHomeButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="TGh-lY-qiU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.90000000000000002" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="2uj-Dl-xzo">
+                                <rect key="frame" x="20" y="210" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="c5L-Aj-Jt5"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="About Black Rock">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="FAA-eV-dLJ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.3904594513644295" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="36U-kF-kJN" firstAttribute="leading" secondItem="OWp-3r-0LY" secondAttribute="leading" id="8mY-ex-WVT"/>
+                            <constraint firstItem="SSQ-ul-nyl" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="Adq-bd-tOH"/>
+                            <constraint firstItem="tcf-rM-cBd" firstAttribute="top" secondItem="9vc-WP-6JJ" secondAttribute="bottom" constant="10" id="BPU-5F-0gV"/>
+                            <constraint firstItem="Q8t-v7-2no" firstAttribute="top" secondItem="fXt-JJ-2vI" secondAttribute="bottom" constant="20" id="Bo0-Vi-8Ao"/>
+                            <constraint firstItem="ZGy-VD-wjB" firstAttribute="top" secondItem="tcf-rM-cBd" secondAttribute="bottom" constant="18" id="Brg-sL-vG5"/>
+                            <constraint firstItem="p8e-9w-y1n" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="Dqo-7z-B7U"/>
+                            <constraint firstItem="OWp-3r-0LY" firstAttribute="top" secondItem="Lug-N1-2lM" secondAttribute="bottom" constant="20" id="G9x-Mp-XSp"/>
+                            <constraint firstItem="p8e-9w-y1n" firstAttribute="leading" secondItem="dRR-P7-mz3" secondAttribute="leading" id="GMt-Bf-OTt"/>
+                            <constraint firstItem="tcf-rM-cBd" firstAttribute="centerX" secondItem="e2V-PB-4Hf" secondAttribute="centerX" id="GTJ-JI-SvD"/>
+                            <constraint firstItem="2uj-Dl-xzo" firstAttribute="top" secondItem="ZGy-VD-wjB" secondAttribute="bottom" constant="35" id="GXB-Yf-5er"/>
+                            <constraint firstItem="36U-kF-kJN" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="IlK-6q-hWx"/>
+                            <constraint firstItem="t2P-Ag-38h" firstAttribute="leading" secondItem="p8e-9w-y1n" secondAttribute="leading" id="IlK-Gt-H4j"/>
+                            <constraint firstItem="ZGy-VD-wjB" firstAttribute="centerX" secondItem="e2V-PB-4Hf" secondAttribute="centerX" id="Jc8-bd-4cN"/>
+                            <constraint firstItem="1OJ-lE-5DH" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="LNt-Wj-LM7"/>
+                            <constraint firstItem="SSQ-ul-nyl" firstAttribute="leading" secondItem="2uj-Dl-xzo" secondAttribute="leading" id="Lpp-xL-0AV"/>
+                            <constraint firstItem="Lug-N1-2lM" firstAttribute="top" secondItem="Q8t-v7-2no" secondAttribute="bottom" constant="20" id="MWm-ys-WBr"/>
+                            <constraint firstItem="dRR-P7-mz3" firstAttribute="top" secondItem="SSQ-ul-nyl" secondAttribute="bottom" constant="20" id="MkD-JU-hVB"/>
+                            <constraint firstItem="2uj-Dl-xzo" firstAttribute="leading" secondItem="e2V-PB-4Hf" secondAttribute="leadingMargin" id="ORW-7w-XdK"/>
+                            <constraint firstItem="Lug-N1-2lM" firstAttribute="leading" secondItem="Q8t-v7-2no" secondAttribute="leading" id="OhL-MZ-wy9"/>
+                            <constraint firstItem="fXt-JJ-2vI" firstAttribute="leading" secondItem="1OJ-lE-5DH" secondAttribute="leading" id="Pl1-8K-6ep"/>
+                            <constraint firstItem="9XN-pK-y7V" firstAttribute="leading" secondItem="t2P-Ag-38h" secondAttribute="leading" id="Q3m-7g-dIz"/>
+                            <constraint firstItem="OWp-3r-0LY" firstAttribute="leading" secondItem="Lug-N1-2lM" secondAttribute="leading" id="S0A-AJ-T8K"/>
+                            <constraint firstItem="OWp-3r-0LY" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="TbS-yn-qcs"/>
+                            <constraint firstItem="dRR-P7-mz3" firstAttribute="leading" secondItem="SSQ-ul-nyl" secondAttribute="leading" id="ahc-ys-n27"/>
+                            <constraint firstItem="9XN-pK-y7V" firstAttribute="top" secondItem="t2P-Ag-38h" secondAttribute="bottom" constant="20" id="azf-n8-du9"/>
+                            <constraint firstItem="fXt-JJ-2vI" firstAttribute="top" secondItem="1OJ-lE-5DH" secondAttribute="bottom" constant="20" id="b76-tK-J23"/>
+                            <constraint firstItem="SSQ-ul-nyl" firstAttribute="top" secondItem="2uj-Dl-xzo" secondAttribute="bottom" constant="20" id="dqK-fS-yok"/>
+                            <constraint firstItem="fXt-JJ-2vI" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="dxX-D7-dY1"/>
+                            <constraint firstItem="p8e-9w-y1n" firstAttribute="width" secondItem="dRR-P7-mz3" secondAttribute="width" id="eI5-EO-SoU"/>
+                            <constraint firstItem="t2P-Ag-38h" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="ePJ-nj-6ak"/>
+                            <constraint firstItem="p8e-9w-y1n" firstAttribute="top" secondItem="dRR-P7-mz3" secondAttribute="bottom" constant="20" id="eR2-a5-DSW"/>
+                            <constraint firstItem="36U-kF-kJN" firstAttribute="top" secondItem="OWp-3r-0LY" secondAttribute="bottom" constant="20" id="lCC-rD-G0N"/>
+                            <constraint firstItem="dRR-P7-mz3" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="oDJ-jo-ttZ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="1OJ-lE-5DH" secondAttribute="trailing" id="ooX-Lx-bcz"/>
+                            <constraint firstItem="9XN-pK-y7V" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="p8B-AF-35Q"/>
+                            <constraint firstItem="Q8t-v7-2no" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="qIY-ea-FVb"/>
+                            <constraint firstItem="Q8t-v7-2no" firstAttribute="leading" secondItem="fXt-JJ-2vI" secondAttribute="leading" id="ray-mx-la8"/>
+                            <constraint firstItem="1OJ-lE-5DH" firstAttribute="top" secondItem="2uj-Dl-xzo" secondAttribute="top" id="sV1-lw-ifM"/>
+                            <constraint firstItem="Lug-N1-2lM" firstAttribute="width" secondItem="2uj-Dl-xzo" secondAttribute="width" id="xcS-Un-nwS"/>
+                            <constraint firstItem="t2P-Ag-38h" firstAttribute="top" secondItem="p8e-9w-y1n" secondAttribute="bottom" constant="20" id="yrr-zP-9XF"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="schoolInfoButtons" destination="1OJ-lE-5DH" id="bJ6-w7-6lo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TjG-Am-7Ln" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1126" y="1064"/>
+        </scene>
+        <!--Staff View Controller-->
+        <scene sceneID="oY9-0b-cgh">
+            <objects>
+                <viewController storyboardIdentifier="bre_staff" id="oda-wo-vFF" customClass="BREStaffViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="DgG-Nz-Z41"/>
+                        <viewControllerLayoutGuide type="bottom" id="3vJ-u4-rK5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Pv0-1O-CRj">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yd3-bg-Udi">
+                                <rect key="frame" x="256" y="30" width="88" height="82"/>
+                                <state key="normal" image="home-icon-white.png"/>
+                                <connections>
+                                    <action selector="didSelectHomeButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="4AD-sD-hwi"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Black Rock Staff" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTE-c0-YgD">
+                                <rect key="frame" x="160" y="130" width="280" height="45"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="36"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Y6k-Vi-f2y">
+                                <rect key="frame" x="20" y="195" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="TIC-Sm-dNZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Admin">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="LAi-6X-bSV"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="Roy-dl-iHO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="U5o-dN-dly">
+                                <rect key="frame" x="420" y="195" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Fourth Grade">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="fKm-72-7dK"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="m1F-Fw-HDQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="107" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="yM0-ct-yKh">
+                                <rect key="frame" x="420" y="254" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Fifth Grade">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="vBs-o0-tNW"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="Bon-Su-IOT"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="108" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="g8W-zG-D6j">
+                                <rect key="frame" x="420" y="313" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Specials">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="Ff4-ZB-JDT"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="oze-GN-luD"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="109" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Yuk-BY-WSV">
+                                <rect key="frame" x="420" y="372" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Academic Support">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="GQn-qW-OjR"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="YLB-em-1ac"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="Djz-O4-Va2">
+                                <rect key="frame" x="420" y="431" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Grade Level Suppt">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="Ut2-V4-s7f"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="3nt-he-Wjw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="roU-FT-4NC">
+                                <rect key="frame" x="420" y="490" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Building Support">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="piA-ok-gBW"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="Wwe-R8-2vh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="101" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="bdH-QD-uR9">
+                                <rect key="frame" x="20" y="254" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Office">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="42H-FN-gIk"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="ntW-gr-MWo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="102" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="BIB-cR-FTe">
+                                <rect key="frame" x="20" y="313" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Preschool">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="G2k-j8-BFj"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="7rh-go-slB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="103" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="8se-yc-b1a">
+                                <rect key="frame" x="20" y="372" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Kindergarten">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="kGl-xu-BLf"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="60o-TA-wiu"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="4MP-lu-KNl">
+                                <rect key="frame" x="20" y="431" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="First Grade">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="3Z8-UQ-fwt"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="JOi-N5-TCV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="kdQ-fp-sxC">
+                                <rect key="frame" x="20" y="490" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Second Grade">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="T6s-Y1-RVh"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="SS4-Uo-aR4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="105" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="GZs-oL-Ekf">
+                                <rect key="frame" x="20" y="547" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Third Grade">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="3Hg-Sw-b9Y"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="D19-wN-3LH"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" alpha="0.89999997615814209" tag="110" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="xKx-Es-qK3">
+                                <rect key="frame" x="420" y="547" width="160" height="39"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" name="BradleyHandITCTT-Bold" family="Bradley Hand" pointSize="15"/>
+                                <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                <state key="normal" title="Community Schools">
+                                    <color key="titleColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="didSelectSchoolInfoButton:" destination="3X7-i5-2rk" eventType="touchUpInside" id="2ym-Hk-WYu"/>
+                                    <action selector="didSelectStaffButton:" destination="oda-wo-vFF" eventType="touchUpInside" id="dL0-oY-bm4"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.39045945139999999" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="nTE-c0-YgD" firstAttribute="top" secondItem="yd3-bg-Udi" secondAttribute="bottom" constant="18" id="3b2-ZL-PFE"/>
+                            <constraint firstItem="GZs-oL-Ekf" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="3eP-qR-xa6"/>
+                            <constraint firstItem="g8W-zG-D6j" firstAttribute="leading" secondItem="yM0-ct-yKh" secondAttribute="leading" id="4QE-sV-Pas"/>
+                            <constraint firstItem="8se-yc-b1a" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="5Lr-tR-yol"/>
+                            <constraint firstItem="xKx-Es-qK3" firstAttribute="height" secondItem="roU-FT-4NC" secondAttribute="height" id="7V9-se-uZp"/>
+                            <constraint firstItem="Y6k-Vi-f2y" firstAttribute="top" secondItem="nTE-c0-YgD" secondAttribute="bottom" constant="20" id="B88-1p-mbJ"/>
+                            <constraint firstItem="xKx-Es-qK3" firstAttribute="leading" secondItem="roU-FT-4NC" secondAttribute="leading" id="Ci0-2j-jNQ"/>
+                            <constraint firstItem="g8W-zG-D6j" firstAttribute="top" secondItem="yM0-ct-yKh" secondAttribute="bottom" constant="20" id="Cqc-JE-hvR"/>
+                            <constraint firstItem="roU-FT-4NC" firstAttribute="leading" secondItem="Djz-O4-Va2" secondAttribute="leading" id="D6I-wy-ym0"/>
+                            <constraint firstItem="yM0-ct-yKh" firstAttribute="top" secondItem="U5o-dN-dly" secondAttribute="bottom" constant="20" id="DSr-bd-dgm"/>
+                            <constraint firstItem="bdH-QD-uR9" firstAttribute="top" secondItem="Y6k-Vi-f2y" secondAttribute="bottom" constant="20" id="FXs-fN-liC"/>
+                            <constraint firstItem="U5o-dN-dly" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="GCV-Jx-gTb"/>
+                            <constraint firstItem="roU-FT-4NC" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="GXl-Sl-zh1"/>
+                            <constraint firstItem="yM0-ct-yKh" firstAttribute="leading" secondItem="U5o-dN-dly" secondAttribute="leading" id="IDZ-44-ShL"/>
+                            <constraint firstItem="yd3-bg-Udi" firstAttribute="centerX" secondItem="Pv0-1O-CRj" secondAttribute="centerX" id="KOy-FU-BCz"/>
+                            <constraint firstItem="Yuk-BY-WSV" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="KyC-D2-gCt"/>
+                            <constraint firstItem="Djz-O4-Va2" firstAttribute="leading" secondItem="Yuk-BY-WSV" secondAttribute="leading" id="OmO-eV-Xdo"/>
+                            <constraint firstItem="kdQ-fp-sxC" firstAttribute="leading" secondItem="4MP-lu-KNl" secondAttribute="leading" id="P0p-sz-F44"/>
+                            <constraint firstItem="Yuk-BY-WSV" firstAttribute="top" secondItem="g8W-zG-D6j" secondAttribute="bottom" constant="20" id="PGH-JY-Onv"/>
+                            <constraint firstItem="nTE-c0-YgD" firstAttribute="centerX" secondItem="Pv0-1O-CRj" secondAttribute="centerX" id="QLU-JV-IYv"/>
+                            <constraint firstItem="xKx-Es-qK3" firstAttribute="top" secondItem="roU-FT-4NC" secondAttribute="bottom" constant="18" id="W36-wW-Ajv"/>
+                            <constraint firstItem="4MP-lu-KNl" firstAttribute="top" secondItem="8se-yc-b1a" secondAttribute="bottom" constant="20" id="Wlz-VD-zdR"/>
+                            <constraint firstItem="Djz-O4-Va2" firstAttribute="top" secondItem="Yuk-BY-WSV" secondAttribute="bottom" constant="20" id="XUG-Lp-I1o"/>
+                            <constraint firstItem="8se-yc-b1a" firstAttribute="top" secondItem="BIB-cR-FTe" secondAttribute="bottom" constant="20" id="Zsf-VQ-cBt"/>
+                            <constraint firstItem="g8W-zG-D6j" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="ary-x1-FsJ"/>
+                            <constraint firstItem="kdQ-fp-sxC" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="axN-si-HPZ"/>
+                            <constraint firstItem="BIB-cR-FTe" firstAttribute="top" secondItem="bdH-QD-uR9" secondAttribute="bottom" constant="20" id="brw-hU-4Z3"/>
+                            <constraint firstItem="4MP-lu-KNl" firstAttribute="leading" secondItem="8se-yc-b1a" secondAttribute="leading" id="btJ-ph-cEg"/>
+                            <constraint firstItem="4MP-lu-KNl" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="cZ4-S7-F1t"/>
+                            <constraint firstItem="BIB-cR-FTe" firstAttribute="width" secondItem="bdH-QD-uR9" secondAttribute="width" id="dJE-ar-hxk"/>
+                            <constraint firstItem="kdQ-fp-sxC" firstAttribute="top" secondItem="4MP-lu-KNl" secondAttribute="bottom" constant="20" id="dcn-mX-WqD"/>
+                            <constraint firstItem="Y6k-Vi-f2y" firstAttribute="leading" secondItem="Pv0-1O-CRj" secondAttribute="leadingMargin" id="del-Hh-rIC"/>
+                            <constraint firstItem="yM0-ct-yKh" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="fpc-v6-nFg"/>
+                            <constraint firstItem="Yuk-BY-WSV" firstAttribute="leading" secondItem="g8W-zG-D6j" secondAttribute="leading" id="gpk-B1-svj"/>
+                            <constraint firstItem="xKx-Es-qK3" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="h51-RW-xSy"/>
+                            <constraint firstItem="U5o-dN-dly" firstAttribute="top" secondItem="Y6k-Vi-f2y" secondAttribute="top" id="hhC-Po-ybs"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="U5o-dN-dly" secondAttribute="trailing" id="iIE-ur-UgC"/>
+                            <constraint firstItem="Djz-O4-Va2" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="k2e-we-h6l"/>
+                            <constraint firstItem="GZs-oL-Ekf" firstAttribute="leading" secondItem="kdQ-fp-sxC" secondAttribute="leading" id="kNd-BX-5MJ"/>
+                            <constraint firstItem="bdH-QD-uR9" firstAttribute="leading" secondItem="Y6k-Vi-f2y" secondAttribute="leading" id="o4t-rs-AXd"/>
+                            <constraint firstItem="BIB-cR-FTe" firstAttribute="leading" secondItem="bdH-QD-uR9" secondAttribute="leading" id="qAp-Rt-TMN"/>
+                            <constraint firstItem="GZs-oL-Ekf" firstAttribute="top" secondItem="kdQ-fp-sxC" secondAttribute="bottom" constant="18" id="ryq-sJ-An6"/>
+                            <constraint firstItem="bdH-QD-uR9" firstAttribute="width" secondItem="Y6k-Vi-f2y" secondAttribute="width" id="tWc-Hf-mhA"/>
+                            <constraint firstItem="roU-FT-4NC" firstAttribute="top" secondItem="Djz-O4-Va2" secondAttribute="bottom" constant="20" id="uKO-aX-me5"/>
+                            <constraint firstItem="8se-yc-b1a" firstAttribute="leading" secondItem="BIB-cR-FTe" secondAttribute="leading" id="utr-mH-jPH"/>
+                            <constraint firstItem="yd3-bg-Udi" firstAttribute="top" secondItem="DgG-Nz-Z41" secondAttribute="bottom" constant="10" id="yRL-9T-xvD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outletCollection property="staffButtons" destination="yM0-ct-yKh" id="QvD-6I-VxD"/>
+                        <outletCollection property="staffButtons" destination="Y6k-Vi-f2y" id="Aoq-7l-1Y9"/>
+                        <outletCollection property="staffButtons" destination="U5o-dN-dly" id="EcF-9Q-vPX"/>
+                        <outletCollection property="staffButtons" destination="g8W-zG-D6j" id="dDA-CQ-qQt"/>
+                        <outletCollection property="staffButtons" destination="Yuk-BY-WSV" id="VcN-D4-N2r"/>
+                        <outletCollection property="staffButtons" destination="Djz-O4-Va2" id="vg3-OL-gNL"/>
+                        <outletCollection property="staffButtons" destination="roU-FT-4NC" id="zfz-8l-UF0"/>
+                        <outletCollection property="staffButtons" destination="bdH-QD-uR9" id="631-lu-y9g"/>
+                        <outletCollection property="staffButtons" destination="BIB-cR-FTe" id="rvt-XD-B9H"/>
+                        <outletCollection property="staffButtons" destination="8se-yc-b1a" id="ycU-va-5fe"/>
+                        <outletCollection property="staffButtons" destination="4MP-lu-KNl" id="nfF-mq-sdE"/>
+                        <outletCollection property="staffButtons" destination="kdQ-fp-sxC" id="etZ-iG-WLH"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AUM-kZ-wri" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1784" y="1064"/>
+        </scene>
+        <!--Web View Controller-->
+        <scene sceneID="hBx-pD-o77">
+            <objects>
+                <viewController storyboardIdentifier="bre_web" id="Qip-Wx-yjV" customClass="BREWebViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IGO-6j-rbn"/>
+                        <viewControllerLayoutGuide type="bottom" id="6rV-pd-0kc"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Bd7-pC-B8D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ga2-dU-2sW">
+                                <rect key="frame" x="0.0" y="20" width="600" height="60"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZc-1Z-S0A">
+                                        <rect key="frame" x="438" y="13" width="50" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didSelectBackButton:" destination="Qip-Wx-yjV" eventType="touchUpInside" id="oKr-oH-NaC"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrx-uD-1ch">
+                                        <rect key="frame" x="508" y="13" width="72" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Forward">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didSelectForwardButton:" destination="Qip-Wx-yjV" eventType="touchUpInside" id="UWf-XS-pGF"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkU-CF-n16">
+                                        <rect key="frame" x="20" y="10" width="44" height="41"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="44" id="aZD-7w-GWw"/>
+                                            <constraint firstAttribute="height" constant="41" id="dkK-Qs-Ahn"/>
+                                        </constraints>
+                                        <state key="normal" image="home-icon-white.png"/>
+                                        <connections>
+                                            <action selector="didPressHomeButton:" destination="Qip-Wx-yjV" eventType="touchUpInside" id="IVl-rZ-hwz"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHv-AN-iKR">
+                                        <rect key="frame" x="84" y="13" width="50" height="34"/>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <inset key="contentEdgeInsets" minX="8" minY="8" maxX="8" maxY="8"/>
+                                        <state key="normal" title="Back">
+                                            <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="didPressBackButton:" destination="Qip-Wx-yjV" eventType="touchUpInside" id="lxK-bi-vPm"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="dkU-CF-n16" firstAttribute="centerY" secondItem="Ga2-dU-2sW" secondAttribute="centerY" id="08k-Q7-CJ5"/>
+                                    <constraint firstItem="hrx-uD-1ch" firstAttribute="leading" secondItem="dZc-1Z-S0A" secondAttribute="trailing" constant="20" id="1pa-ev-X9c"/>
+                                    <constraint firstItem="dZc-1Z-S0A" firstAttribute="centerY" secondItem="Ga2-dU-2sW" secondAttribute="centerY" id="E1J-nB-Q5e"/>
+                                    <constraint firstItem="hrx-uD-1ch" firstAttribute="centerY" secondItem="Ga2-dU-2sW" secondAttribute="centerY" id="I02-00-dxw"/>
+                                    <constraint firstItem="dkU-CF-n16" firstAttribute="leading" secondItem="Ga2-dU-2sW" secondAttribute="leading" constant="20" id="ZLT-uE-Z1c"/>
+                                    <constraint firstItem="fHv-AN-iKR" firstAttribute="centerY" secondItem="Ga2-dU-2sW" secondAttribute="centerY" id="bG8-pX-HAa"/>
+                                    <constraint firstItem="fHv-AN-iKR" firstAttribute="leading" secondItem="dkU-CF-n16" secondAttribute="trailing" constant="20" id="iHO-xP-y7O"/>
+                                    <constraint firstAttribute="trailing" secondItem="hrx-uD-1ch" secondAttribute="trailing" constant="20" id="iiC-zD-0W3"/>
+                                    <constraint firstAttribute="height" constant="60" id="udp-wz-sca"/>
+                                </constraints>
+                            </view>
+                            <webView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Nh8-em-mvC">
+                                <rect key="frame" x="0.0" y="80" width="600" height="520"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="deviceRGB"/>
+                            </webView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="Nh8-em-mvC" firstAttribute="leading" secondItem="Bd7-pC-B8D" secondAttribute="leading" id="At1-lT-qin"/>
+                            <constraint firstAttribute="trailing" secondItem="Ga2-dU-2sW" secondAttribute="trailing" id="Fig-ED-g5N"/>
+                            <constraint firstItem="Ga2-dU-2sW" firstAttribute="leading" secondItem="Bd7-pC-B8D" secondAttribute="leading" id="Sjs-uh-iil"/>
+                            <constraint firstItem="Nh8-em-mvC" firstAttribute="top" secondItem="Ga2-dU-2sW" secondAttribute="bottom" id="Wz5-uc-7A3"/>
+                            <constraint firstAttribute="trailing" secondItem="Nh8-em-mvC" secondAttribute="trailing" id="mby-qJ-dvd"/>
+                            <constraint firstItem="6rV-pd-0kc" firstAttribute="top" secondItem="Nh8-em-mvC" secondAttribute="bottom" id="ub1-GL-tLk"/>
+                            <constraint firstItem="Ga2-dU-2sW" firstAttribute="top" secondItem="IGO-6j-rbn" secondAttribute="bottom" id="yQX-5x-F8C"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="backWebButton" destination="dZc-1Z-S0A" id="ZdJ-t8-5s8"/>
+                        <outlet property="forwardWebButton" destination="hrx-uD-1ch" id="z4E-xF-EN2"/>
+                        <outlet property="previousViewButton" destination="fHv-AN-iKR" id="0jt-9v-vtA"/>
+                        <outlet property="webView" destination="Nh8-em-mvC" id="hrz-cF-JJt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="skN-FC-A2D" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1781" y="335"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="cpu-jc-z8V">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="t3p-0o-zO4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="XbI-NQ-w3L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="cHc-F2-N9s"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lOI-3s-WLm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="314" y="332"/>
         </scene>
     </scenes>
     <resources>
         <image name="blackrock1920x1080.png" width="1080" height="1920"/>
         <image name="bresheader2.png" width="508" height="81"/>
+        <image name="home-icon-white.png" width="88" height="82"/>
     </resources>
 </document>
